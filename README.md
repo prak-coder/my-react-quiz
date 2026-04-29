@@ -2,7 +2,7 @@ React Quiz Master
 
 A sleek, high-performance quiz application designed to test React knowledge while demonstrating advanced state management patterns.
 
-<a href='https://react-quiz-usereducer.vercel.app/'> Live Demo</a>
+<a href="https://react-quiz-usereducer.vercel.app/" target="_blank">Live Demo</a>
 
 🚀 Overview
 
