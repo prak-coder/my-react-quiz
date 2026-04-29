@@ -1,16 +1,46 @@
-# React + Vite
+React Quiz Master
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, high-performance quiz application designed to test React knowledge while demonstrating advanced state management patterns.
 
-Currently, two official plugins are available:
+<a href='https://react-quiz-usereducer.vercel.app/'> Live Demo</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Overview
 
-## React Compiler
+This project is a dedicated learning tool built to master the useReducer hook. By moving complex state logic out of the UI components and into a centralized reducer, the application maintains a highly readable and predictable codebase.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+Framework: React (Vite)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+State Management: useReducer Hook
+
+Styling: Modern CSS3
+
+Deployment: Vercel
+
+✨ Key Features
+
+Dynamic Scoring: Points are assigned based on the specific difficulty level of each question.
+
+Adaptive Timer: The countdown adjusts automatically based on the complexity of the current question set. 
+
+15 Targeted Questions: Curated content focusing on core React concepts.
+
+Clean Architecture: Minimal JSX logic with robust backend state transitions handled by a unified reducer. 
+
+🧠 Why useReducer?
+
+While useState is excellent for simple toggles, this project explores why useReducer is the superior choice for complex applications:
+
+Consolidated Logic: All state transitions live in one function.
+
+Predictability: Easier to debug how the state changes from one "action" to the next.
+
+Readability: Keeps the component UI clean and focused on rendering.
+
+
+
+
+
+
+
