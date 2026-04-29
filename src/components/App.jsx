@@ -12,7 +12,7 @@ import Footer from "./Footer";
 import Timer from "./Timer";
 const SECS_PER_QUESTION = 30;
 function reducer(state, action) {
-  const question = state.questions.at(state.index);
+  const question = state.questions?.at(state.index);
 
   switch (action.type) {
     case "dataReceived":
@@ -82,9 +82,9 @@ function App() {
   const numQuestions = questions.length;
   const maxPoints = questions.reduce((prev, cur) => prev + cur.points, 0);
   useEffect(function () {
-    fetch("http://localhost:9000/questions")
+    fetch("/questions.json")
       .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
+      .then((data) => dispatch({ type: "dataReceived", payload: data.questions }))
       .catch((err) => dispatch({ type: "dataFailed" }));
   }, []);
   return (
